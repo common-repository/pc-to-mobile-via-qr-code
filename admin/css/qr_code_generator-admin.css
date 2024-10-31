@@ -1,0 +1,921 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .mwb_qrcode_generator_topnav_wrap .mwb_qrcode_generator_topnav li {
+  background-color: #666666;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_topnav_wrap .mwb_qrcode_generator_topnav li a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: inline-block;
+}
+/*=====  End of topnav section  ======*/
+/*===================================
+=            sidebar nav            =
+===================================*/
+button.mwb_qrcode_generator_accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+button.mwb_qrcode_generator_accordion.active, button.mwb_qrcode_generator_accordion:hover {
+  background-color: #ddd; 
+}
+div.mwb_qrcode_generator_panel {
+  background-color: #ffffff;
+  display: none;
+  margin-top: 20px;
+  padding: 0 18px;
+}
+/*=====  End of sidebar nav  ======*/
+/*===================================
+=            sidebar nav            =
+===================================*/
+.mwb_qrcode_generator_sidebarnav li {
+  background-color: #666666;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2px 0;
+  min-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_sidebarnav li a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: inline-block;
+}
+.mwb-qrcode_generator_sidebar_nav_wrap .mwb_qrcode_generator_sidebarnav {
+  list-style: outside none none;
+}
+/*=====  End of sidebar nav  ======*/
+/*=======================================================
+=            checkbox and radio button style            =
+=======================================================*/
+/*===============================
+=            style-2            =
+===============================*/
+.slideOne {
+  background: #333333 none repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  height: 10px;
+  margin: 20px auto;
+  position: relative;
+  width: 50px;
+}
+.slideOne input[type="checkbox"] {
+  visibility: hidden;
+}
+.slideOne label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: block;
+  height: 16px;
+  left: -3px;
+  position: absolute;
+  top: -3px;
+  transition: all 0.4s ease 0s;
+  width: 16px;
+}
+.slideOne input[type="checkbox"]:checked + label {
+  left: 37px;
+}
+.slideTwo::after {
+  background: #111111 none repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 2px;
+  left: 14px;
+  position: absolute;
+  top: 14px;
+  width: 52px;
+}
+.slideTwo {
+  background: #333333 none repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  height: 30px;
+  margin: 20px auto;
+  position: relative;
+  width: 80px;
+}
+.slideTwo input[type="checkbox"] {
+  visibility: hidden;
+}
+.slideTwo input[type="checkbox"]:checked + label::after {
+  background: #27ae60 none repeat scroll 0 0;
+}
+.slideTwo label::after {
+  background: #333333 none repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px #000000 inset, 0 1px 0 rgba(255, 255, 255, 0.9);
+  content: "";
+  height: 10px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  width: 10px;
+}
+.slideTwo input[type="checkbox"]:checked + label {
+  left: 54px;
+}
+.slideTwo label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: block;
+  height: 22px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  transition: all 0.4s ease 0s;
+  width: 22px;
+  z-index: 1;
+}
+.slideThree::before {
+  color: #27ae60;
+  content: "ON";
+  font: bold 12px/26px Arial,sans-serif;
+  left: 10px;
+  position: absolute;
+  z-index: 0;
+}
+.slideThree::after {
+  color: #000000;
+  content: "OFF";
+  font: bold 12px/26px Arial,sans-serif;
+  position: absolute;
+  right: 10px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
+  z-index: 0;
+}
+.slideThree {
+  background: #333333 none repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  height: 26px;
+  position: relative;
+  width: 80px;
+  margin-top: 10px;
+}
+.slideThree input[type="checkbox"] {
+  visibility: hidden;
+}
+.slideThree input[type="checkbox"]:checked + label {
+  left: 43px;
+}
+.slideThree label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: all 0.4s ease 0s;
+  width: 34px;
+  z-index: 1;
+}
+.roundedOne {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  width: 28px;
+}
+.roundedOne input[type="checkbox"] {
+  visibility: hidden;
+}
+.roundedOne input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.roundedOne label::after {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #27ae60 0%, #145b32 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 16px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+}
+.roundedOne label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #222222 0%, #45484d 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #ffffff;
+  cursor: pointer;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+}
+.roundedTwo {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  width: 28px;
+}
+.roundedTwo input[type="checkbox"] {
+  visibility: hidden;
+}
+.roundedTwo input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.roundedTwo label::after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: currentcolor currentcolor #fcfff4 #fcfff4;
+  border-image: none;
+  border-style: none none solid solid;
+  border-width: medium medium 3px 3px;
+  content: "";
+  height: 5px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-45deg);
+  width: 9px;
+}
+.roundedTwo label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #222222 0%, #45484d 100%) repeat scroll 0 0;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #ffffff;
+  cursor: pointer;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+}
+.squaredOne {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  width: 28px;
+}
+.squaredOne input[type="checkbox"] {
+  visibility: hidden;
+}
+.squaredOne input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.squaredOne label::after {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #27ae60 0%, #145b32 100%) repeat scroll 0 0;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 16px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+}
+.squaredOne label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #222222 0%, #45484d 100%) repeat scroll 0 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #ffffff;
+  cursor: pointer;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+}
+.squaredTwo {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) repeat scroll 0 0;
+  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+  height: 28px;
+  margin: 20px auto;
+  position: relative;
+  width: 28px;
+}
+.squaredTwo input[type="checkbox"] {
+  visibility: hidden;
+}
+.squaredTwo input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+.squaredTwo label::after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: currentcolor currentcolor #fcfff4 #fcfff4;
+  border-image: none;
+  border-style: none none solid solid;
+  border-width: medium medium 3px 3px;
+  content: "";
+  height: 5px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-45deg);
+  width: 9px;
+}
+.squaredTwo label {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #222222 0%, #45484d 100%) repeat scroll 0 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #ffffff;
+  cursor: pointer;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+}
+.mwb_qrcode_generator_panel > div {
+  display: inline-block;
+  margin: 20px 20px 20px 0;
+  vertical-align: middle;
+}
+/*================================
+=            my style            =
+================================*/
+.section.mwb_qrcode_generator_accordian_wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.mwb-qrcode_generator_sidebar_nav_wrap {
+  float: left;
+  max-width: 20%;
+  width: 100%;
+}
+.mwb_qrcode_generator_accordian_list {
+  float: right;
+  max-width: 78%;
+  width: 100%;
+}
+.section.mwb_qrcode_generator_topnav_wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.mwb_qrcode_generator_control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+/*=====  End of my style  ======*/
+.mwb-qrcode_generator-control-group {
+  vertical-align: top;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin: 10px;
+}
+.mwb-qrcode_generator-control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mwb-qrcode_generator-control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.mwb-qrcode_generator-control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.mwb-qrcode_generator-control--radio .mwb-qrcode_generator-control__indicator {
+  border-radius: 50%;
+}
+.mwb-qrcode_generator-control:hover input ~ .mwb-qrcode_generator-control__indicator,
+.mwb-qrcode_generator-control input:focus ~ .mwb-qrcode_generator-control__indicator {
+  background: #ccc;
+}
+.mwb-qrcode_generator-control input:checked ~ .mwb-qrcode_generator-control__indicator {
+  background: #2aa1c0;
+}
+.mwb-qrcode_generator-control:hover input:not([disabled]):checked ~ .mwb-qrcode_generator-control__indicator,
+.mwb-qrcode_generator-control input:checked:focus ~ .mwb-qrcode_generator-control__indicator {
+  background: #0e647d;
+}
+.mwb-qrcode_generator-control input:disabled ~ .mwb-qrcode_generator-control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.mwb-qrcode_generator-control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.mwb-qrcode_generator-control input:checked ~ .mwb-qrcode_generator-control__indicator:after {
+  display: block;
+}
+.mwb-qrcode_generator-control--checkbox .mwb-qrcode_generator-control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.mwb-qrcode_generator-control--checkbox input:disabled ~ .mwb-qrcode_generator-control__indicator:after {
+  border-color: #7b7b7b;
+}
+.mwb-qrcode_generator-control--radio .mwb-qrcode_generator-control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.mwb-qrcode_generator-control--radio input:disabled ~ .mwb-qrcode_generator-control__indicator:after {
+  background: #7b7b7b;
+}
+.mwb-qrcode_generator-select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.mwb-qrcode_generator-select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.mwb-qrcode_generator-select select::-ms-expand {
+  display: none;
+}
+.mwb-qrcode_generator-select select:hover,
+.mwb-qrcode_generator-select select:focus {
+  color: #000;
+  background: #ccc;
+}
+.mwb-qrcode_generator-select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.mwb-qrcode_generator-select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.mwb-qrcode_generator-select select:hover ~ .mwb-qrcode_generator-select__arrow,
+.mwb-qrcode_generator-select select:focus ~ .mwb-qrcode_generator-select__arrow {
+  border-top-color: #000;
+}
+.mwb-qrcode_generator-select select:disabled ~ .mwb-qrcode_generator-select__arrow {
+  border-top-color: #ccc;
+}
+.mwb-qrcode_generator-radio-custom {
+  opacity: 0;
+  position: absolute;   
+}
+.mwb-qrcode_generator-radio-custom, .mwb-qrcode_generator-radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+.mwb-qrcode_generator-radio-custom-label {
+  position: relative;
+}
+.mwb-qrcode_generator-radio-custom + .mwb-qrcode_generator-radio-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+.mwb-qrcode_generator-radio-custom + .mwb-qrcode_generator-radio-custom-label:before {
+  border-radius: 50%;
+}
+.mwb-qrcode_generator-radio-custom:checked + .mwb-qrcode_generator-radio-custom-label:before {
+  background: #0E647D;
+}
+/*======================================
+=            select box css            =
+======================================*/
+.mwb-qrcode_generator-styled-select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+.mwb-qrcode_generator-styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+.mwb-qrcode_generator-styled-select.slate {
+  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+  height: 34px;
+  width: 240px;
+}
+.mwb-qrcode_generator-styled-select.mwb-qrcode_generator-slate select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
+/* -------------------- Rounded Corners */
+.mwb-qrcode_generator-rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.mwb-qrcode_generator-semi-square {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* -------------------- Colors: Background */
+.mwb-qrcode_generator-slate   { background-color: #ddd; }
+.mwb-qcode_generator-green   { background-color: #779126; }
+.mwb-qrcode_generator-blue    { background-color: #3b8ec2; }
+.mwb-qrcode_generator-yellow  { background-color: #eec111; }
+.mwb-qrcode_generator-black   { background-color: #000; }
+/* -------------------- Colors: Text */
+.mwb-qrcode_generator-slate select   { color: #000; }
+.mwb-qrcode_generator-green select   { color: #fff; }
+.mwb-qrcode_generator-blue select    { color: #fff; }
+.mwb-qrcode_generator-yellow select  { color: #000; }
+.mwb-qrcode_generator-black select   { color: #fff; }
+#mwb-qrcode_generator-mainselection select {
+  border: 0;
+  color: #EEE;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 10px;
+  width: 378px;
+  *width: 350px;
+  *background: #58B14C;
+  -webkit-appearance: none;
+}
+#mwb-qrcode_generator-mainselection {
+  overflow:hidden;
+  width:350px;
+  -moz-border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 1px 1px 11px #330033;
+  background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+}
+select#mwb-qrcode_generator-soflow, select#mwb-qrcode_generator-soflow-color {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 20px;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+}
+select#mwb-qrcode_generator-soflow-color {
+  color: #fff;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+  background-color: #779126;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+/*=====  End of select box css  ======*/
+/*===================================
+=            links style            =
+===================================*/
+a.mwb-qrcode_generator-mwb-qrcode_generator-one:link {color:#ff0000;}
+a.mwb-qrcode_generator-one:visited {color:#0000ff;}
+a.mwb-qrcode_generator-one:hover {color:#ffcc00;}
+a.mwb-qrcode_generator-two:link {color:#ff0000;}
+a.mwb-qrcode_generator-two:visited {color:#0000ff;}
+a.mwb-qrcode_generator-two:hover {font-size:150%;}
+a.mwb-qrcode_generator-three:link {color:#ff0000;}
+a.mwb-qrcode_generator-three:visited {color:#0000ff;}
+a.mwb-qrcode_generator-three:hover {background:#66ff66;}
+a.mwb-qrcode_generator-four:link {color:#ff0000;}
+a.mwb-qrcode_generator-four:visited {color:#0000ff;}
+a.mwb-qrcode_generator-four:hover {font-family:monospace;}
+a.mwb-qrcode_generator-five:link {color:#ff0000;text-decoration:none;}
+a.mwb-qrcode_generator-five:visited {color:#0000ff;text-decoration:none;}
+a.mwb-qrcode_generator-five:hover {text-decoration:underline;}
+.mwb-qrcode_generator-link-style .mwb-qrcode_generator-block {
+  background-color: #F44336;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.mwb-qrcode_generator-link-style {
+  display: block!important;
+  margin: 0!important;
+}
+.mwb-qrcode_generator-link-style .mwb-qrcode_generator-block a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mwb-qrcode_generator-link-style .mwb-qrcode_generator-block:hover {
+  background-color: #666666;
+  opacity: 0.9;
+  }/* style1 */
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block1 {
+    background-color: #CDDC39;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+  }
+  .mwb-qrcode_generator-link-style {
+    display: block!important;
+    margin: 0!important;
+  }
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block1 a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block1:hover {
+    opacity: 0.8;
+  }
+  /* style2 */
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block2 {
+    background-color: #FF5722;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+  }
+  .mwb-qrcode_generator-link-style {
+    display: block!important;
+    margin: 0!important;
+  }
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block2 a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .mwb-qrcode_generator-link-style .mwb-qrcode_generator-block2 a:hover {
+    text-decoration: underline;
+    }/* style3 */
+    .mwb_qrcode_generator_panel > .mwb-qrcode_generator-link-style .mwb-qrcode_generator-inline a {
+  background-color: #2196F3;
+  color: #ffffff;
+  display: inline;
+  font-size: 16px;
+  list-style: outside none none;
+  padding: 10px 33px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_panel > .mwb-qrcode_generator-link-style .mwb-qrcode_generator-inline:hover {
+  opacity: 0.8;
+}
+.mwb-qrcode_generator-link-style {
+  margin-bottom: 60px!important;
+}
+    /*=====  End of links style  ======*/
+/*================================================
+=            lable formayye structure            =
+================================================*/
+.mwb_qrcode_generator_table_wrap {
+  float: right;
+  max-width: 75%;
+  width: 100%;
+}
+.mwb_qrcode_generator_table_wrap label {
+  color: #666666;
+  display: inline-block;
+  padding: 15px 7px;
+  text-transform: uppercase;
+  width: 20%;
+}
+.mwb_qrcode_generator_table_wrap .mwb_qrcode_generator_inputfields {
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+  color: #666666;
+  margin: 10px 0;
+  padding: 15px 7px;
+  text-transform: uppercase;
+  width: 75%;
+}
+.mwb_qrcode_generator_submit_fields {
+  background-color: #666666;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #ffffff;
+  float: right;
+  margin: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_submit_fields2 {
+  background-color: #666666;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_table_wrap .mwb_qrcode_generator_inputfields2 {
+  border: 1px solid #f1f1f1;
+  color: #666666;
+  margin: 10px 0;
+  padding: 15px 7px;
+  width: 75%;
+}
+.mwb_qrcode_generator_table_wrap .mwb_qrcode_generator_inputfields3{
+  border: 1px solid #f1f1f1;
+  color: #666666;
+  margin: 10px 0;
+  padding: 15px 7px;
+  width: 75%;
+}
+.mwb_qrcode_generator_submit_fields3{
+  background-color: #666666;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.mwb_qrcode_generator_submit_wrap {
+  margin: 30px 0;
+  text-align: center;
+}
+/*=====  End of lable formayye structure  ======*/
+/*=======================================
+=            table structure            =
+=======================================*/
+
+table.mwb_qrcode_generator_tableformatte {
+  border-collapse: collapse;
+  float: right;
+  font-family: arial,sans-serif;
+  margin-top: 15px;
+  width: 75%;
+}
+
+.mwb_qrcode_generator_tableformatte td, .mwb_qrcode_generator_tableformatte th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.mwb_qrcode_generator_tableformatte tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.mwb_qbg_setting_form h1 {
+  background-color: #fff;
+  margin: 20px 0px 21px 0;
+  padding: 20px;
+}
+.mwb_qbg_setting_form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mwb_qbg_setting tr:nth-child(2n+1) {
+  margin: 0 15px;
+}
+.mwb_qbg_setting tr:nth-child(2n+1) {
+  background-color: #fff;
+  margin: 0 15px;
+}
+.mwb_qbg_setting tr td. .mwb_qbg_setting tr th{
+  padding: 0 15px;
+  margin-right: 15px;
+}
+.form-table.mwb_qbg_setting th {
+  padding: 20px 10px;
+}
+.mwb_qbg_setting .select2 {
+  max-width: 220px!important;
+  width:100%!important;
+}
+.mwb_qbg_setting .select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #ececec;
+  height: 38px;
+  margin-left: 10px;
+}
+.mwb_qbg_setting label input{
+    background-color: white;
+  border: 1px solid #ececec;
+  height: 38px;
+  margin-left: 10px;
+}
+.mwb_qbg_scode {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.mwb_qbg_setting .mwb_qbg_categories_selection ~ .select2.select2-container .select2-selection.select2-selection--multiple {
+  height: auto;
+}
+.mwb_qbg_setting .mwb_qbg_categories_selection ~ .select2.select2-container .select2-selection.select2-selection--multiple input {
+  height: 26px;
+}
+.mwb_qbg_mwb_qbg_shortcode_tooltip
+{
+  margin-left: 10px;
+}
+/*=====  End of table structure  ======*/
+
+ 
